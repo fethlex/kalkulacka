@@ -4,7 +4,8 @@
         { 
             var a = document.getElementById("cislo1ඞ").value;
             var b = document.getElementById("cislo2ඞ").value;
-            var c =Number(a)+Number(b);
+            var c =Number(a)
+            Number(b);
             console.log("výsledek="+c );
          }
     </script>
@@ -13,6 +14,15 @@
        <h1> Calculator </h1>
     </head>
     <body>
-        <input id="cislo1ඞ"/>  <input id="cislo2ඞ"/> <button onclick="secti()" id="="> -------  =  -------- </button>
+        <input id="cislo1ඞ" placeholder="Enter the Number"/> 
+        <label for="sign">Choose a sign:</label>
+        <select name="sign" id="sign">
+          <option value="+">Plus+</option>
+          <option value="-">Minus-</option>
+          <option value="*">Multiply*</option>
+          <option value="/">Devide/</option>
+        </select>
+         <input id="cislo2ඞ" placeholder="Enter the Number"/> 
+         <button onclick="secti()" id="="> -------  =  -------- </button>
     </body>
 </html>
